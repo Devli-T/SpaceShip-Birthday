@@ -1024,43 +1024,43 @@
   ],
   "images": [
     {
-      "uri": "textures/spacestation_main2_baseColor.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_baseColor.jpeg"
     },
     {
-      "uri": "textures/spacestation_main2_metallicRoughness.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_metallicRoughness.png"
     },
     {
-      "uri": "textures/spacestation_main2_emissive.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_emissive.jpeg"
     },
     {
-      "uri": "textures/spacestation_main2_normal.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_normal.png"
     },
     {
-      "uri": "textures/spacestation_smalllights_baseColor.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_baseColor.jpeg"
     },
     {
-      "uri": "textures/spacestation_smalllights_metallicRoughness.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_metallicRoughness.png"
     },
     {
-      "uri": "textures/spacestation_smalllights_emissive.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_emissive.jpeg"
     },
     {
-      "uri": "textures/spacestation_smalllights_normal.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_normal.png"
     },
     {
-      "uri": "textures/spacestation_main_baseColor.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_baseColor.jpeg"
     },
     {
-      "uri": "textures/spacestation_main_metallicRoughness.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_metallicRoughness.png"
     },
     {
-      "uri": "textures/spacestation_main_emissive.jpeg"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_emissive.jpeg"
     },
     {
-      "uri": "textures/spacestation_main_normal.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_normal.png"
     },
     {
-      "uri": "textures/spacestation_main_clearcoat_normal.png"
+      "uri": "https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_clearcoat_normal.png"
     }
   ],
   "materials": [

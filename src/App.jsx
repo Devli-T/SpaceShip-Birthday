@@ -12,6 +12,7 @@ function App() {
 
   return (
     <div>
+        <div className="top-left-text">Loading resources from remote server may take time. Please be patient.</div>
         <div className="top-right-text">Search for the rocket ship!</div>
         <Canvas>
         <Suspense fallback={null}>

@@ -1,13 +1,18 @@
-spacestation_main_baseColor.jpeg
-spacestation_main_clearcoat_normal.png
-spacestation_main_emissive.jpeg
-spacestation_main_metallicRoughness.png
-spacestation_main_normal.png
-spacestation_main2_baseColor.jpeg
-spacestation_main2_emissive.jpeg
-spacestation_main2_metallicRoughness.png
-spacestation_main2_normal.png
-spacestation_smalllights_baseColor.jpeg
-spacestation_smalllights_emissive.jpeg
-spacestation_smalllights_metallicRoughness.png
-spacestation_smalllights_normal.png
+This folder used to contain texture information for the prefabs.
+This is no longer the case, as they have been migrated to a supabase S3 bucket.
+  - scene.gltf has been changed accordingly
+
+See: 
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_baseColor.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_clearcoat_normal.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_emissive.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_metallicRoughness.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_normal.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_baseColor.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_emissive.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_metallicRoughness.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main2_normal.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_baseColor.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_emissive.jpeg
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_metallicRoughness.png
+https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_smalllights_normal.png

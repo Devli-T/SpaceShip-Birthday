@@ -3,3 +3,5 @@
 /public/textures/spacestation*
 
 /build
+
+package-lock.json

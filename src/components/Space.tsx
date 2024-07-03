@@ -4,7 +4,7 @@ import { Canvas } from '@react-three/fiber';
 import '../App.css';
 
 import { Environment, OrbitControls, Sparkles } from '@react-three/drei';
-import SpaceStation from '../Scene';
+import SpaceStation from '../models/SpaceStation';
 import AudioPlayer from './AudioPlayer';
 
 const Space = () => {
@@ -13,13 +13,13 @@ const Space = () => {
       <div className="top-left-text">Loading resources from remote server may take time. Please be patient.</div>
       <div className="top-right-text">Search for the rocket ship!</div>
       <Canvas>
-      <Suspense fallback={null}>
-          <ambientLight intensity = {1.5}/>
-          <OrbitControls minDistance={4} maxDistance={15}/>
-          <SpaceStation />
-          <Sparkles size={2} color={"#fffff"} scale={[10,10,10]} />
-      </Suspense>
-      <Environment preset="sunset" />
+        <Suspense fallback={null}>
+          <ambientLight intensity={1.5}/>
+          <OrbitControls minDistance={0} maxDistance={15} panSpeed={0}/>
+          <SpaceStation position={[0, 0, 0]} scale={[1, 1, 1]} />
+          <Sparkles size={2} color={"#ffffff"} scale={[10,10,10]} />
+        </Suspense>
+        <Environment preset="sunset" />
       </Canvas>
       <AudioPlayer />
     </div>

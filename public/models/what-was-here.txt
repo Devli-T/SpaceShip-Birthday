@@ -1,0 +1,3 @@
+This used to be the place where I put all of the .gltf, .glb, and .bin files. However, they were a bit too big, so they have also been moved to cloud storage for ease of access at runtime. Reduce load from cloudflare.
+
+

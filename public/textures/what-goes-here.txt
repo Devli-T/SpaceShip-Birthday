@@ -1,6 +1,6 @@
 This folder used to contain texture information for the prefabs.
 This is no longer the case, as they have been migrated to a supabase S3 bucket.
-  - scene.gltf has been changed accordingly
+  -> scene.gltf has been changed accordingly
 
 See: 
 https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Spaceship/spacestation_main_baseColor.jpeg

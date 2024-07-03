@@ -1,0 +1,25 @@
+.buttonContainer  {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #050505;
+}
+
+.beginButton {
+  background: linear-gradient(90deg, rgb(40, 14, 136) 0%, rgb(70, 21, 137) 50%, rgb(94, 15, 143) 100%);
+  color: white;
+  font-size: 48px;
+  font-weight: bold;
+  padding: 20px 40px;
+  border: none;
+  border-radius: 50px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.beginButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}

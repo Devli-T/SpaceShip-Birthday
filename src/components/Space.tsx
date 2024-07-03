@@ -1,7 +1,7 @@
 import React from 'react';
 import { Suspense } from 'react';
 import { Canvas } from '@react-three/fiber';
-import './App.css';
+import '../App.css';
 
 import { Environment, OrbitControls, Sparkles } from '@react-three/drei';
 import SpaceStation from '../Scene';

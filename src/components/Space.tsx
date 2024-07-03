@@ -10,14 +10,13 @@ import Aestroid from '../models/Aestroid';
 import Skybox from '../models/Skybox';
 
 const Space = () => {
-  const [isSpaceStationClicked, setIsSpaceStationClicked] = useState(false);
+  const [isAesteroidClicked, setAesteroidClicked] = useState(false);
 
-  const handleSpaceStationClick = () => {
-    setIsSpaceStationClicked(true);
-    console.log('SpaceStation clicked');
+  const handleAesteroidClicked = () => {
+    setAesteroidClicked(true);
+    console.log(`Aesteroid clicked: ${isAesteroidClicked}`);
   };
 
-  
   return (
     <div>
       <div className="top-left-text">Loading resources from remote server may take time. Please be patient.</div>
@@ -25,10 +24,10 @@ const Space = () => {
       <Canvas>
         <Suspense fallback={null}>
           <ambientLight intensity={1.5}/>
-          <OrbitControls minDistance={4} maxDistance={15} panSpeed={1}/>
+          <OrbitControls minDistance={4} maxDistance={15} panSpeed={0.4}/>
           <SpaceStation position={[0, 0, 0]} scale={[1, 1, 1]} />
           <Skybox size={1} position={[0, 0, 0]} scale={[1, 1, 1]}/>
-          <Aestroid position={[0, 1, 5]} scale={[0.004, 0.004, 0.004]} onClick={handleSpaceStationClick}/>
+          <Aestroid position={[0, 1, 5]} scale={[0.004, 0.004, 0.004]}/>
           <Sparkles size={2} color={"#ffffff"} scale={[10,10,10]} />
         </Suspense>
         <Environment preset="sunset" />

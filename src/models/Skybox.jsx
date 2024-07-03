@@ -10,10 +10,10 @@ Title: asteroid
 import React, { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
 
-export default function Model(onClick, ...props) {
+export default function Model(props) {
   const { nodes, materials } = useGLTF('https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Models/aestroid.gltf')
   return (
-    <group {...props} dispose={null} onClick={onClick}>
+    <group {...props} dispose={null}>
       <group rotation={[-Math.PI / 2, 0, 0]}>
         <mesh geometry={nodes.Object_2.geometry} material={materials.Object001_mtl} />
         <mesh geometry={nodes.Object_3.geometry} material={materials.Object001_mtl} />

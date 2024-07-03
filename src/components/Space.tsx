@@ -16,7 +16,7 @@ const Space = () => {
       <Canvas>
         <Suspense fallback={null}>
           <ambientLight intensity={1.5}/>
-          <OrbitControls minDistance={0} maxDistance={15} panSpeed={0}/>
+          <OrbitControls minDistance={4} maxDistance={15} panSpeed={1}/>
           <SpaceStation position={[0, 0, 0]} scale={[1, 1, 1]} />
           <Aestroid size={1} position={[0, 0, 0]} scale={[1, 1, 1]}/>
           <Aestroid position={[0, 1, 5]} scale={[0.004, 0.004, 0.004]}/>

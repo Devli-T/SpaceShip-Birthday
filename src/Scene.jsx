@@ -7,13 +7,12 @@ Source: https://sketchfab.com/3d-models/space-station-3-a7a6ad10261149cab31aa394
 Title: Space Station 3
 */
 
-import React, { useRef } from 'react'
-import { useGLTF, useAnimations } from '@react-three/drei'
+import { useRef } from 'react'
+import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {
   const group = useRef()
-  const { nodes, materials, animations } = useGLTF('/scene.gltf')
-  const { actions } = useAnimations(animations, group)
+  const { nodes, materials } = useGLTF('/scene.gltf')
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">

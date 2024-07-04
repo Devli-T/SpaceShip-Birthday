@@ -15,7 +15,7 @@ const FinalMessage = () => {
       } else {
         clearInterval(interval);
       }
-    }, 200); // Adjust time for faster or slower letter flipping
+    }, 200); 
 
     return () => clearInterval(interval);
   }, [message]);

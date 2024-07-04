@@ -7,7 +7,7 @@ Source: https://sketchfab.com/3d-models/asteroid-80a70567fb2a42df836e6d70204e0b6
 Title: asteroid
 */
 
-import React, { useRef } from 'react'
+import React from 'react'
 import { useGLTF } from '@react-three/drei'
 
 export default function Model(props) {

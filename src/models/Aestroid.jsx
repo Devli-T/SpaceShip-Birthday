@@ -6,13 +6,17 @@ export default function Model(props) {
   const { nodes, materials } = useGLTF('https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Models/aestroid.gltf');
   const asteroidRef = useRef();
 
+  // Rotation logic
   useFrame(({ clock }) => {
     const time = clock.getElapsedTime();
-    const radius = 10; // Adjust the radius for larger or smaller orbits
-    const speed = 0.3; // Adjust speed, higher values make the orbit faster
-    asteroidRef.current.position.x = Math.sin(time * speed) * radius;
-    asteroidRef.current.position.y = Math.cos(time * speed) * radius;
-    asteroidRef.current.position.z = Math.sin(time * speed) * radius;
+    const radius = 25; 
+    const eliptic = 1.3;
+    const speed = 0.4; 
+    const offset = 17;
+    asteroidRef.current.position.x = (-Math.sin(time * speed) * radius) + offset;
+    asteroidRef.current.position.z = Math.cos(time * speed) * (radius / eliptic);
+
+    asteroidRef.current.rotation.y = -time / 2;
   });
 
   return (

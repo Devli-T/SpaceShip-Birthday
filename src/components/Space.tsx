@@ -25,7 +25,7 @@ const Space = () => {
           <OrbitControls minDistance={4} maxDistance={15} panSpeed={0.4}/>
           <SpaceStation position={[0, 0, 0]} scale={[1, 1, 1]} />
           <Skybox size={1} position={[0, 0, 0]} scale={[1, 1, 1]}/>
-          <Aestroid position={[0, 1, 5]} scale={[0.004, 0.004, 0.004]} onClick={handleAesteroidClicked}/>
+          <Aestroid position={[0, 0, 5]} scale={[0.004, 0.004, 0.004]} onClick={handleAesteroidClicked}/>
           <Sparkles size={2} color={"#ffffff"} scale={[10,10,10]} />
         </Suspense>
         <Environment preset="sunset" />

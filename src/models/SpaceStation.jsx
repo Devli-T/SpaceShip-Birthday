@@ -9,17 +9,26 @@ Title: Space Station 3
 
 import { useRef } from 'react'
 import { useGLTF } from '@react-three/drei'
+import { useFrame } from '@react-three/fiber'
 
 export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF('https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Models/SpaceStation.gltf')
+
+  // Bobbing and rotating animation
+  // useFrame(({ clock }) => {
+  //   group.current.position.y = Math.sin(clock.getElapsedTime()) * 0.5;
+  //   group.current.rotation.y += 0.01;
+  //   group.current.rotation.y %= 360;
+  // });
+
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group name="Sketchfab_model" rotation={[-2.044, -0.213, -0.061]} scale={2.701}>
           <group name="root">
             <group name="GLTF_SceneRootNode" rotation={[Math.PI / 2, 0, 0]}>
-              <group name="SpaceStation_low_0">
+              <group name="SpaceStation_low_0" >
                 <mesh name="Object_4" geometry={nodes.Object_4.geometry} material={materials.spacestation_main2} />
               </group>
               <group name="SpaceStation001_low_1">
@@ -31,6 +40,7 @@ export default function Model(props) {
               <group name="SpaceStation003_low_3">
                 <mesh name="Object_10" geometry={nodes.Object_10.geometry} material={materials.spacestation_main2} />
               </group>
+              {/* this is the spacestation in the middle */}
               <group name="SpaceStation004_low_4">
                 <mesh name="Object_12" geometry={nodes.Object_12.geometry} material={materials.spacestation_main} />
               </group>

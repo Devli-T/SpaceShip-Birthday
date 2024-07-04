@@ -33,7 +33,7 @@ const Space = () => {
         <Environment preset="sunset" />
       </Canvas>
       <div className="top-left-text">Loading resources from remote server may take time. Please be patient.</div>
-      <div className="top-right-text">Search for the Asteroid!</div>
+      {isAesteroidClicked && <div className="top-right-text">Search for the Asteroid!</div>}
       {isAesteroidClicked && <FinalMessage />}
       <AudioPlayer />
     </div>

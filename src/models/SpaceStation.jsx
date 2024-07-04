@@ -15,12 +15,16 @@ export default function Model(props) {
   const group = useRef()
   const { nodes, materials } = useGLTF('https://keqcipjzpgqocvqhovbr.supabase.co/storage/v1/object/public/Models/SpaceStation.gltf')
 
-  // Bobbing and rotating animation
-  // useFrame(({ clock }) => {
-  //   group.current.position.y = Math.sin(clock.getElapsedTime()) * 0.5;
-  //   group.current.rotation.y += 0.01;
-  //   group.current.rotation.y %= 360;
-  // });
+  const mainGroup = useRef()
+
+  useFrame(({ clock }) => {
+    if (mainGroup.current) {
+      let height = 0.1;
+      let rotSpeed = 0.001;
+      mainGroup.current.position.y = Math.sin(clock.getElapsedTime()) * height;
+      mainGroup.current.rotation.y -= rotSpeed;
+    }
+  })
 
   return (
     <group ref={group} {...props} dispose={null}>
@@ -34,24 +38,26 @@ export default function Model(props) {
               <group name="SpaceStation001_low_1">
                 <mesh name="Object_6" geometry={nodes.Object_6.geometry} material={materials.spacestation_smalllights} />
               </group>
-              <group name="SpaceStation002_low_2">
-                <mesh name="Object_8" geometry={nodes.Object_8.geometry} material={materials.spacestation_main2} />
-              </group>
-              <group name="SpaceStation003_low_3">
-                <mesh name="Object_10" geometry={nodes.Object_10.geometry} material={materials.spacestation_main2} />
-              </group>
               {/* this is the spacestation in the middle */}
-              <group name="SpaceStation004_low_4">
-                <mesh name="Object_12" geometry={nodes.Object_12.geometry} material={materials.spacestation_main} />
-              </group>
-              <group name="SpaceStation005_low_5">
-                <mesh name="Object_14" geometry={nodes.Object_14.geometry} material={materials.spacestation_main} />
-              </group>
-              <group name="SpaceStation006_low_6" rotation={[Math.PI, -0.545, Math.PI]}>
-                <mesh name="Object_16" geometry={nodes.Object_16.geometry} material={materials.spacestation_main} />
-              </group>
-              <group name="SpaceStation007_low_7">
-                <mesh name="Object_18" geometry={nodes.Object_18.geometry} material={materials.spacestation_main} />
+              <group ref={mainGroup}>
+                <group name="SpaceStation002_low_2">
+                  <mesh name="Object_8" geometry={nodes.Object_8.geometry} material={materials.spacestation_main2} />
+                </group>
+                <group name="SpaceStation003_low_3">
+                  <mesh name="Object_10" geometry={nodes.Object_10.geometry} material={materials.spacestation_main2} />
+                </group>
+                <group name="SpaceStation004_low_4">
+                  <mesh name="Object_12" geometry={nodes.Object_12.geometry} material={materials.spacestation_main} />
+                </group>
+                <group name="SpaceStation005_low_5">
+                  <mesh name="Object_14" geometry={nodes.Object_14.geometry} material={materials.spacestation_main} />
+                </group>
+                <group name="SpaceStation006_low_6" rotation={[Math.PI, -0.545, Math.PI]}>
+                  <mesh name="Object_16" geometry={nodes.Object_16.geometry} material={materials.spacestation_main} />
+                </group>
+                <group name="SpaceStation007_low_7">
+                  <mesh name="Object_18" geometry={nodes.Object_18.geometry} material={materials.spacestation_main} />
+                </group>
               </group>
             </group>
           </group>

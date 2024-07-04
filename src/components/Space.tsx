@@ -24,7 +24,7 @@ const Space = () => {
       <Canvas>
         <Suspense fallback={null}>
           <ambientLight intensity={1.5}/>
-          <OrbitControls minDistance={4} maxDistance={15} panSpeed={0}/>
+          <OrbitControls minDistance={4} maxDistance={15} panSpeed={0.2}/>
           <SpaceStation position={[0, 0.5, 0]} scale={[1, 1, 1]} rotation={[0.45, -0.5, 0]} />
           <Skybox size={1} position={[0, 0, 0]} scale={[1, 1, 1]}/>
           <Aestroid position={[0, 0, 5]} scale={[0.004, 0.004, 0.004]} onClick={handleAesteroidClicked}/>

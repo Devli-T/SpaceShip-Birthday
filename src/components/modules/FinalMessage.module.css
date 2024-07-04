@@ -1,31 +1,41 @@
 .messageContainer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    user-select: none;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    width: 100vw;
-    font-size: 2rem;
-    color: #fff;
-    background-color: #000000AA;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  user-select: none;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-size: 2rem;
+  color: #fff;
+  background-color: #000000AA;
+  animation: fadeIn 2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    background-color: #00000000;
   }
-  
-  .letter {
-    display: inline-block;
-    margin: 0 2px;
+  to {
+    background-color: #000000CC;
+  }
+}
+
+.letter {
+  display: inline-block;
+  margin: 0 2px;
+  transform: rotateX(0);
+  transition: transform 0.6s ease;
+  animation: flipUp 0.6s ease forwards;
+}
+
+@keyframes flipUp {
+  from {
+    transform: rotateX(-90deg);
+  }
+  to {
     transform: rotateX(0);
-    transition: transform 0.6s ease;
-    animation: flipUp 0.6s ease forwards;
   }
-  
-  @keyframes flipUp {
-    from {
-      transform: rotateX(-90deg);
-    }
-    to {
-      transform: rotateX(0);
-    }
-  }
+}

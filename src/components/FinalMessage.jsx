@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styles from './modules/FinalMessage.module.css';
 
 const FinalMessage = () => {
-  const message = "Haappy  Birthday,  Gabriela!";
+  const message = "Haappy  Birthday,  *NAME*!";
   const [displayedMessage, setDisplayedMessage] = useState('');
 
   useEffect(() => {
